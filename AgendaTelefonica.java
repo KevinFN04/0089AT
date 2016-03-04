@@ -24,5 +24,12 @@ public class AgendaTelefonica
     public void enterNumber(String name, String number){
         agendaTlf.put(name, number);
     }
-
+    
+    /**
+     * Devuelve el numero de teléfono del contacto indicado. Si el contacto no existe, 
+     * devuelve null.
+     */
+    public String lookupNumber(String name){
+        return agendaTlf.get(name);
+    }
 }
