@@ -8,7 +8,7 @@ import java.util.*;
 public class AgendaTelefonica
 {
     Map<String, String> agendaTlf;
-    
+
     /**
      * Constructor for objects of class agendaTelefonica
      */
@@ -16,7 +16,7 @@ public class AgendaTelefonica
     {
         agendaTlf = new HashMap<String, String>();
     }
-    
+
     /**
      * Permite almacenar un nuevo número en la agenda indicando el nombre del contacto
      * y su numero de telefono asociado
@@ -24,12 +24,19 @@ public class AgendaTelefonica
     public void enterNumber(String name, String number){
         agendaTlf.put(name, number);
     }
-    
+
     /**
      * Devuelve el numero de teléfono del contacto indicado. Si el contacto no existe, 
      * devuelve null.
      */
     public String lookupNumber(String name){
         return agendaTlf.get(name);
+    }
+
+    /**
+     * Print all keys
+     */
+    public void printAllNames(){
+        System.out.println(agendaTlf.keySet());
     }
 }
