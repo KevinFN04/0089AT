@@ -16,5 +16,13 @@ public class AgendaTelefonica
     {
         agendaTlf = new HashMap<String, String>();
     }
+    
+    /**
+     * Permite almacenar un nuevo número en la agenda indicando el nombre del contacto
+     * y su numero de telefono asociado
+     */
+    public void enterNumber(String name, String number){
+        agendaTlf.put(name, number);
+    }
 
 }
